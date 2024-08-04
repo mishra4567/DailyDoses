@@ -37,4 +37,14 @@ class Menus{
         ]);
     }
     //coped to class-assets.php end
+// 05.08.2024 : 01.04
+    public function get_menu_id($location){
+        // Get all the location
+        $locations=get_nav_menu_locations();
+        // get object id by location
+        $menu_id=$locations[$location];
+        // my_prx($menu_id);
+        return !empty($menu_id) ? $menu_id :'';
+
+    }
 }

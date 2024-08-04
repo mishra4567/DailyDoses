@@ -8,6 +8,11 @@
  * @package DailyDoses.
  * 
  */
+// 05.08.2024 : 01.04
+$menu_class = \DAILYDOSES_THEME\Inc\Menus::get_instance();
+$header_menu_id=$menu_class->get_menu_id('dailyDoses-header-menu');
+$header_menus = wp_get_nav_menu_items($header_menu_id);
+// my_prx($header_menus);
 ?>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
@@ -54,8 +59,8 @@
   </div>
 </nav>
 <?php 
-  wp_nav_menu([
-    'theme_location'=>'dailyDoses-header-menu',
-    'container_class'=>'my_extra_menu_class',
-  ])
+  // wp_nav_menu([
+  //   'theme_location'=>'dailyDoses-header-menu',
+  //   'container_class'=>'my_extra_menu_class',
+  // ])
 ?>
