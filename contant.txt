@@ -1,0 +1,24 @@
+06.07.2024:- 
+register css,js,
+8- include: external css, 
+22.07.2024:-
+9- Using Bootstrap in Wordpress
+24.07.2024:-
+continue:-
+25.07.2024
+10- Namespaces, Autoloaders, Traits, Singleton --introduction
+11- AutoLoaders --introduction
+12- Traits --introduction
+13- singleton -- introduction
+14- trait singleton --introduction
+26.07.2024
+15- trait-singleton.php, and add it into function.php
+16-class-dailyDoses-theme.php include it in function.p
+26.07.2024
+17- Enqueue with OOP
+18- add theme support title tag | add_theme_support
+19- how to add custom logo
+20- add_theme_support('custom-background');
+04.08.2024
+21- add_theme_support('post-thumbnails');
+22- how to create dynamic header menu in Wordpress | nav_menu
