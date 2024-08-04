@@ -24,3 +24,4 @@ continue:-
 22- how to create dynamic header menu in Wordpress | nav_menu
 05.08.2024 : 01.04
 23- how to make html menu dynamic in Wordpress
+24- how to make html menu dynamic in Wordpress (chapter 2)
