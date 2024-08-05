@@ -25,3 +25,7 @@ continue:-
 05.08.2024 : 01.04
 23- how to make html menu dynamic in Wordpress
 24- how to make html menu dynamic in Wordpress (chapter 2)
+05.08.2024 : 21.13
+25- Wordpress post vs Pages
+26- Template hierarchy
+27- Template hierarchy create Page Templates

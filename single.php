@@ -9,7 +9,7 @@
  get_header();
 ?>
 <div class="content">
-    <?php esc_html_e('Content Index','dailyDoses'); ?>
+    <?php esc_html_e('Single Post','dailyDoses'); ?>
 </div>
     
 <?php 
