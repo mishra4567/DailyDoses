@@ -29,3 +29,6 @@ continue:-
 25- Wordpress post vs Pages
 26- Template hierarchy
 27- Template hierarchy create Page Templates
+28- Wordpress The Loop | Wordpress post Page
+29- Get blog Page title Wordpress
+30- Loop in Bootstrap 3 grid layout
