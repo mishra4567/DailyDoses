@@ -36,27 +36,37 @@ class DAILYDOSES_THEME
          * style and js
          */
         // 27.07.2024:00.23
-        add_action('after_setup_theme',[$this,'setup_theme']);
+        add_action('after_setup_theme', [$this, 'setup_theme']);
     }
     // 27.07.2024:00.25
-    public function setup_theme(){
+    public function setup_theme()
+    {
         add_theme_support('title-tag');
         //27.07.2024:00.34
-        add_theme_support('custom-logo',[
-            'header-text'=>['site-title','site-description'],
-            'height'=>100,
-            'width'=>400,
-            'flex-height'=>true,
-            'flex-width'=>true,
+        add_theme_support('custom-logo', [
+            'header-text' => ['site-title', 'site-description'],
+            'height' => 100,
+            'width' => 400,
+            'flex-height' => true,
+            'flex-width' => true,
         ]);
         // 27.07.2024:0055
-        add_theme_support('custom-background',[
-            'default-color'=>'ffff',
-            'default-image'=>'',
-            'default-repeat'=>'no-repeat',
+        add_theme_support('custom-background', [
+            'default-color' => 'ffff',
+            'default-image' => '',
+            'default-repeat' => 'no-repeat',
         ]);
         // 04.08.2024
         add_theme_support('post-thumbnails');
+        /**
+         * 11.08.2024 | 00.01
+         * Register image size.
+         */
+        add_image_size('featured-thumbnail',350,233,true);
+        /**
+         * 11.08.2024 | 00.01 end
+         * 
+         */
         add_theme_support('automatic-feed-links');
         add_theme_support(
             'html5',
@@ -70,12 +80,12 @@ class DAILYDOSES_THEME
                 'style',
             ]
         );
-        add_editor_style(  );
-        add_theme_support( 'wp-block-styles' );
+        add_editor_style();
+        add_theme_support('wp-block-styles');
         add_theme_support('align-wide');
         global $content_width;
-        if( ! isset($content_width)){
-            $content_width=1240;
+        if (! isset($content_width)) {
+            $content_width = 1240;
         }
     }
 }
