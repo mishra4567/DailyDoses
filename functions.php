@@ -43,6 +43,10 @@ if (! defined('DAILYDOSES_DIR_URI')) {
 // to print data 
 // my_prx(DAILYDOSES_DIR_PATH);
 require_once DAILYDOSES_DIR_PATH . '/inc/helpers/autoloader.php';
+// 10.08.2024 : 12.24
+require_once DAILYDOSES_DIR_PATH . '/inc/helpers/template-tags.php';
+// 10.08.2024 : 12.24
+
 function dailyDoses_get_theme_instance(){
     \DAILYDOSES_THEME\Inc\DAILYDOSES_THEME::get_instance();
 }

@@ -34,3 +34,4 @@ continue:-
 30- Loop in Bootstrap 3 grid layout
 31- No content Template | Wordpress get_search_form
 32- create dynamic Template | Wordpress blog post Template
+33- Lazy loading Wordpress without Plugin | Featurd image Wordpress | defoult Featurd image

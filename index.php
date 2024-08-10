@@ -25,24 +25,22 @@ get_header();
                     <?php
                     $index = 0;
                     $no_of_columns = 3;
-                    //case index = 0;
-                    // startthe loop
                     while (have_posts()): the_post();
-                        if (0 === $index % $no_of_columns) {
-                    ?>
+                        if (0 === $index % $no_of_columns) { ?>
                             <div class="col-lg-4 col-md-6 col-sm-12">
-                            <?php } ?>
-                            <!-- 08.08.2024 : 21.15 Start-->
-                            <?php get_template_part('template-parts/content') ?>
-                            <!-- 08.08.2024 : 21.15 end-->
-
+                            <?php
+                        };
+                            ?>
+                            <?php
+                            get_template_part('template-parts/content')
+                            ?>
                             <?php
                             $index++;
                             if (0 !== $index && 0 === $index % $no_of_columns) {
                             ?>
                             </div>
                     <?php
-                            }
+                            };
                         endwhile;
                     ?>
                 </div>
@@ -53,7 +51,7 @@ get_header();
             get_template_part('template-parts/content-none');
         endif;
         // get_template_part('template-parts/content-none');
-         ?>
+        ?>
         <!-- 08.08.2024 : 21.15 end-->
     </main>
 </div>
