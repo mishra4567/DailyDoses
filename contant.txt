@@ -33,3 +33,4 @@ continue:-
 29- Get blog Page title Wordpress
 30- Loop in Bootstrap 3 grid layout
 31- No content Template | Wordpress get_search_form
+32- create dynamic Template | Wordpress blog post Template
