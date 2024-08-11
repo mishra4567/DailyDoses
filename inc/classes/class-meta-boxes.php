@@ -38,6 +38,7 @@ class Meta_Boxes
          * Action.
          */
         add_action('add_meta_boxes', [$this, 'add_custom_meta_box']);
+        add_action('save_post',[$this, 'save_post_meta_data']);
     }
 
     public function add_custom_meta_box()
@@ -71,6 +72,15 @@ class Meta_Boxes
             <option value="no" <?php selected($value, 'no') ?>><?php esc_html_e('No', 'dailyDoses') ?></option>
         </select>
 <?php
+    }
+    public function save_post_meta_data($post_id){
+        if(array_key_exists('dailyDoses_hide_title_field',$_POST)){
+            update_post_meta(
+                $post_id,
+                '_hide_page_title',
+                $_POST['dailyDoses_hide_title_field']
+            );
+        }
     }
 }
 /**
