@@ -50,6 +50,11 @@ require_once DAILYDOSES_DIR_PATH . '/inc/helpers/template-tags.php';
 function dailyDoses_get_theme_instance(){
     \DAILYDOSES_THEME\Inc\DAILYDOSES_THEME::get_instance();
 }
+// !importent that the class init
+if ( class_exists( '\DAILYDOSES_THEME\Inc\Meta_Boxes' ) ) {
+    \DAILYDOSES_THEME\Inc\Meta_Boxes::get_instance();
+}
+
 dailyDoses_get_theme_instance();
 // 26.07.2024 End
 function dailyDoses_enqueue_scripts()
